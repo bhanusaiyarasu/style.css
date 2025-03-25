@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Responsive Image slides using jQuery</title>
+<link rel="stylesheet" href="responsiveslides.css">
+<link rel="stylesheet" href="style.css">
+<script src="jquery-3.2.1.min.js"></script>
+<script src="responsiveslides.min.js"></script>
+<script>
+$(function()
+{
+$("#slider").responsiveSlides
+({
+auto:true,
+pager:false,
+nav:true,
+speed:300,
+namespace:"slider-callback",
+maxwidth:"550px"
+});
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+<div class="responsive-slider">
+    <ul class="rslides" id="slider">
+<li>
+<img src="images/icecream.jpg" alt="">
+<p class="caption">Icecream</p>
+</li>
+<li>
+<img src="images/sweets.jpg" alt="">
+<p class="caption">Sweets</p>
+</li>
+<li>
+<img src="images/milkshake.jpg" alt="">
+<p class="caption">Milkshake</p>
+</li>
+<li>
+<img src="images/faluda.jpg" alt="">
+<p class="caption">Faluda Icecream</p>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
